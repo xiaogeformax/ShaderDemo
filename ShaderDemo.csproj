@@ -64,9 +64,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Controll.cs" />
+    <Compile Include="Assets\ThermalDistortion\Move.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\ColdDown\ColdDown.shader" />
+    <None Include="Assets\Distortion\Distortion.shader" />
+    <None Include="Assets\Rain\Rain.shader" />
+    <None Include="Assets\Stroke\Stroke.shader" />
+    <None Include="Assets\Stroke\Stroke2.shader" />
+    <None Include="Assets\ThermalDistortion\AlphaBlend.shader" />
+    <None Include="Assets\ThermalDistortion\ThermalDistortion.shader" />
     <None Include="Assets\flow\Flow.shader" />
     <None Include="Assets\flow\MoveLight.shader" />
   </ItemGroup>
