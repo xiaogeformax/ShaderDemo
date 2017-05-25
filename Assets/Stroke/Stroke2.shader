@@ -5,12 +5,13 @@
 	}
 	
 	CGINCLUDE
-		#include "UnityCG.cginc"
+		//#include "UnityCG.cginc"
 		struct appdata_custom{
 			float4 vertex:POSITION;
 			float3 normal:NORMAL;
 		};
 		
+
 		struct v2f{
 			float4 pos:POSITION;
 			float4 color:COLOR;
