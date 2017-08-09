@@ -20,7 +20,7 @@ Shader "Custom/DistortPostEffect"
     uniform sampler2D _MaskTex;  
     uniform float _DistortTimeFactor;  
     uniform float _DistortStrength;  
-  
+
     fixed4 frag(v2f_img i) : SV_Target  
     {  
       
@@ -34,7 +34,7 @@ Shader "Custom/DistortPostEffect"
         float2 uv = offset * factor.r + i.uv;  
         return tex2D(_MainTex, uv);  
     }  
-  
+
     ENDCG  
   
     SubShader  
@@ -43,13 +43,14 @@ Shader "Custom/DistortPostEffect"
         {  
             ZTest Always  
             Cull Off  
-            ZWrite Off  
-            Fog{ Mode off }  
+            //ZWrite Off  
+            //Fog{ Mode off }  
   
             CGPROGRAM  
             #pragma vertex vert_img  
             #pragma fragment frag  
-            #pragma fragmentoption ARB_precision_hint_fastest   
+            #pragma fragmentoption ARB_precision_hint_fastest    //低精度的效果
+
             ENDCG  
         }  
     }  
